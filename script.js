@@ -1,9 +1,18 @@
-const hamburgerIcon = document.querySelector(".fa-bars")
-const verticalItems = document.querySelector(".vertical-items")
+const onBtn = document.querySelector("#on");
+const offBtn = document.querySelector("#off");
+const imgElement = document.querySelector("img");
 
-hamburgerIcon.addEventListener("click", showNavItems);
+onBtn.addEventListener("click", () =>  handleClick  ("on"));
+offBtn.addEventListener("click", () => handleClick  ("off"));
 
-function showNavItems(){
- hamburgerIcon.classList.toggle("active");
- verticalItems.classList.toggle("active");
+function handleClick(action){
+  switch (action){
+     case "on":{
+         imgElement.setAttribute("src", "./bulb-on.jpg");
+     break;
+  }
+  default:{
+         imgElement.setAttribute("src", "./bulb-off.jpg");
+  }
+}
 }
