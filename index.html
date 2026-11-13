@@ -2,48 +2,41 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width= , initial-scale=1.0">
-  <title>Document</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="login">
-    <div class="content">
-       <h2>Log In</h2>
-       <p class="descripttion">
-        Log in to your account to upload or download pictures, videos or music
-       </p>
-       <input type="email" placeholder="Enter your email address">
-      <div class="reset">
-        <p>Forgot password?</p>
-        <button>
-          <p>Next</p>
-          <img
-          width="15"
-          height="15"
-           src="./images/arrow-right.svg" alt="">
-        </button>
-      </div>
-      <hr>
-      <p class="or-login-with"> 
-        Or Log in with
-      </p>
-      <div class="social-login">
-        <button>
-          <img width="20" height="20" src="./images/facebook.svg" alt="">
-          <p>Facebook</p>
-        </button>
-        <button>
-         <img width="20" height="20" src="./images/google.svg" alt="">
-         <p>Google</p>
-        </button>
-      </div>
-      <p class="sign-up-cta">
-        Don't have an account yet? <span>Sign up</span></p>
+    <h2>Welcome Back</h2>
+
+    <div class="field">
+      <label for="email">Email</label>
+      <input type="email" placeholder="john@example.com" id="email">
     </div>
-    <div class="imag-wrapper">
-      <img width="250" src="./images/ocean.jpg" alt="Ocean Image">
-      
+
+    <div class="field">
+      <label for="password">Password</label>
+      <input type="password" placeholder="•••••" id="password">
+    </div>
+
+    <button>Sign In</button>
+
+    <div class="bottom">
+      <p>Or Continue With</p>
+
+      <div class="socials">
+        <div>
+          <img width="20" src="./facebook (1).svg" alt="Facebook">
+        </div>
+        <div>
+          <img width="20" src="./twitter.svg" alt="Twitter">
+        </div>
+        <div>
+          <img width="20" src="./google (1).svg" alt="Google">
+        </div>
+      </div>
+
     </div>
   </div>
 </body>
